@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxe Souverain</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: "Garamond", serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #fefefe;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(90deg, rgba(0, 0, 0, 0.8), rgba(51, 51, 51, 0.8)), 
+                        url('img5.jpg') no-repeat center;
+            background-size: cover;
+            color: #fff;
+            padding: 60px 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: normal;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            z-index: 2;
+            position: relative;
+        }
+
+        nav {
+            margin-top: 20px;
+            z-index: 2;
+            position: relative;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Background Overlay */
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 1;
+        }
+
+        /* Main Styles */
+        main {
+            padding: 40px 20px;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #111;
+        }
+
+        .fashion-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .fashion-item {
+            width: 300px;
+            background-color: #f8f8f8;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .fashion-item:hover {
+            transform: scale(1.05);
+        }
+
+        .fashion-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .fashion-item h3 {
+            margin: 15px;
+            font-size: 1.5rem;
+            color: #111;
+        }
+
+        .fashion-item p {
+            margin: 15px;
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .fashion-item .price {
+            margin: 15px;
+            font-size: 1.2rem;
+            color: #d4af37;
+            font-weight: bold;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #000;
+            color: #fff;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 10px 0;
+        }
+
+        footer a {
+            color: #d4af37;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Luxe Souverain</h1>
+        <nav>
+            <a href="#women">Women</a>
+            <a href="#men">Men</a>
+            <a href="#accessories">Accessories</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Women's Section -->
+        <section id="women">
+            <h2 class="section-title">Women's Collection</h2>
+            <div class="fashion-section">
+                <div class="fashion-item">
+                    <img src="img8.jpg" alt="Elegant Evening Dress">
+                    <h3>Elegant Evening Dress</h3>
+                    <p>Perfect for formal events with exquisite craftsmanship.</p>
+                    <p class="price">$1,500</p>
+                </div>
+                <div class="fashion-item">
+                    <img src="img4.jpg" alt="Chic Casual Outfit">
+                    <h3>Chic Casual Outfit</h3>
+                    <p>Style and comfort combined for everyday luxury.</p>
+                    <p class="price">$1,500</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Men's Section -->
+        <section id="men">
+            <h2 class="section-title">Men's Collection</h2>
+            <div class="fashion-section">
+                <div class="fashion-item">
+                    <img src="img2.jpg" alt="Classic Luxury Suit">
+                    <h3>Classic Luxury Suit</h3>
+                    <p>Timeless elegance for modern gentlemen.</p>
+                    <p class="price">$2,500</p>
+                </div>
+                <div class="fashion-item">
+                    <img src="img3.jpg" alt="Designer Casual Wear">
+                    <h3>Designer Casual Wear</h3>
+                    <p>Relaxed yet sophisticated for every occasion.</p>
+                    <p class="price">$950</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Accessories Section -->
+        <section id="accessories">
+            <h2 class="section-title">Luxury Accessories</h2>
+            <div class="fashion-section">
+                <div class="fashion-item">
+                    <img src="img6.jpg" alt="Designer Handbag">
+                    <h3>Designer Handbag</h3>
+                    <p>Handcrafted luxury to elevate your style.</p>
+                    <p class="price">$4,500</p>
+                </div>
+                <div class="fashion-item">
+                    <img src="img7.jpg" alt="Luxury Watch">
+                    <h3>Luxury Watch</h3>
+                    <p>Precision and elegance for every wrist.</p>
+                    <p class="price">$15,000</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <p><strong>Contact Us</strong></p>
+        <p>Phone: <a href="tel:">+57 316 167 9267</a></p>
+        <p>Email: <a href="mailto:contact@luxesouverain.com">contact@luxesouverain.com</a></p>
+        <p>Location: 123 Luxury Avenue, Paris, France</p>
+        <p>&copy; 2024 Luxe Souverain. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+
